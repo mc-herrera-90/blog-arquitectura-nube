@@ -46,7 +46,7 @@ __Opción 2:__
 - Desde el [__portal de AWS Academy__](https://awsacademy.instructure.com/login/canvas) inicia el AWS Learner Lab.
 
 {:align="center"}
-![Consola AWS](/assets/images/aws_lab/aws_start_lab.png)
+![Consola AWS](assets/images/aws_lab/aws_start_lab.png)
 _AWS Learner Lab._
 
 __En el panel de inicio__
