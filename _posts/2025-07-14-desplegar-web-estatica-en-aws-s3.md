@@ -46,53 +46,53 @@ __Opción 2:__
 - Desde el [__portal de AWS Academy__](https://awsacademy.instructure.com/login/canvas) inicia el AWS Learner Lab.
 
 {:align="center"}
-![Consola AWS](assets/images/aws_lab/aws_start_lab.png)
+![Consola AWS]({{ 'assets/images/aws_lab/aws_start_lab.png' | relative_url }})
 _AWS Learner Lab._
 
 __En el panel de inicio__
 
 - Desde la consola principal de AWS, busca "S3" en la barra de búsqueda de servicios y haz clic en el servicio S3:
 
-![Search AWS S3](/assets/images/aws/search-s3-from-console.png)
+![Search AWS S3]({{ 'assets/images/aws/search-s3-from-console.png' | relative_url }})
 
 ### __2. Crear un nuevo Bucket__
 
 - En la página de inicio de S3, encontrarás una opción para crear un nuevo bucket para su sitio web. Haz clic en ella.
 
-![Crear nuevo bucket](/assets/images/aws/new-bucket-button.png)
+![Crear nuevo bucket]({{ 'assets/images/aws/new-bucket-button.png' | relative_url }})
 
 - Puedes crear el __bucket__ con la configuración predeterminada, pero tenga consideración al elegir el nombre del bucket porque no se podrá cambiar a futuro.
 
-![Nombrar bucket](/assets/images/aws/name-bucket-s3.png)
+![Nombrar bucket]({{ 'assets/images/aws/name-bucket-s3.png' | relative_url }})
 
 ### __3. Sube tu sitio web al Bucket__
 
 - Después de crear el contenedor, haz clic en él para acceder a la opción de subir archivos. Haz clic en el botón que dice __Cargar__:
 
-![Botón cargar](/assets/images/aws/btn-change-upload-files.png)
+![Botón cargar]({{ 'assets/images/aws/btn-change-upload-files.png' | relative_url }})
 
 - Ahora puedes subir los archivos de diferentes maneras, arrastando la carpeta o presionando en los botones:
 
 {: align="center" }
-![Subir archivos del sitio](/assets/images/aws/upload-files-website.png)
+![Subir archivos del sitio]({{ 'assets/images/aws/upload-files-website.png' | relative_url }})
 _Carga los archivos manualmente_
 
 {: align="center" }
-![Mover directorios](/assets/images/aws/upload-files-move-website.png)
+![Mover directorios]({{ 'assets/images/aws/upload-files-move-website.png' | relative_url }})
 _Carga tu sitio web arrastrando la carpeta del proyecto_
 
 {:align="center"}
-![Detalles de los archivos y cargarlos](/assets/images/aws/details-files-and-upload.png)
+![Detalles de los archivos y cargarlos]({{ 'assets/images/aws/details-files-and-upload.png' | relative_url }})
 _Detalles de los archivos a subir_
 
 - Después de cargar los archivos, se muestra la carpeta de tu sitio web y allí podrás ver todos los archivos, incluido el `index.html`. Si haces clic sobre este archivo, verás un enlace en __URL del objeto__ que te llevará a la página web.
 
-![Enlace al sitio web](/assets/images/aws/object-url-website.png)
+![Enlace al sitio web]({{ 'assets/images/aws/object-url-website.png' | relative_url }})
 
 - Sin embargo, al hacer clic en él, aparecerá el siguiente error:
 
 {:align="center"}
-![Error acceso denegado](/assets/images/aws/error-access-denied.png)
+![Error acceso denegado]({{ 'assets/images/aws/error-access-denied.png' | relative_url }})
 _Error: Permisos insuficientes para acceder al archivo en S3_
 
 ### ¿Por qué?
@@ -108,18 +108,18 @@ _Error: Permisos insuficientes para acceder al archivo en S3_
 - Para ello, debes ir al bucket y luego hacer clic sobre la pestaña __Permisos__ y editar __Bloquear acceso público (configuración del bucket)__ y desmarcar __Bloquear todo el acceso público__:
 
 {:align="center"}
-![Ir a pestaña permisos](/assets/images/aws/permissions-bucket.png)
+![Ir a pestaña permisos]({{ 'assets/images/aws/permissions-bucket.png' | relative_url }})
 _Vista de la pestaña "Permisos" de un bucket en Amazon S3_
 
 {:align="center"}
-![Desmarcar el bloqueo a público](/assets/images/aws/uncheck-block-bucket.png)
+![Desmarcar el bloqueo a público]({{ 'assets/images/aws/uncheck-block-bucket.png' | relative_url }})
 _Al desmarcar esta casilla se permite configurar el acceso público al bucket_
 
 ### b. Actualizar política del Bucket
 
 En la misma pestaña de permisos, verás la opción para editar la política del bucket:
 
-![editar políticas del bucket](/assets/images/aws/edit-policy-bucket.png)
+![editar políticas del bucket]({{ 'assets/images/aws/edit-policy-bucket.png' | relative_url }})
 
 En esa política, agregue la siguiente política y guarde los cambios:
 
@@ -140,13 +140,13 @@ En esa política, agregue la siguiente política y guarde los cambios:
 
 > Nota: Asegúrate de cambiar `your-bucket-name` por el nombre del bucket creado.
 
-![Nueva política agregada](/assets/images/aws/new-policy-add.png)
+![Nueva política agregada]({{ 'assets/images/aws/new-policy-add.png' | relative_url }})
 
 Finalmente, después de completar todos los pasos, vuelve a la carpeta del sitio web y haz clic sobre el `index.html`.
 
 Encontrarás el enlace que revisamos anteriormente en __Objeto URL__ y, en esta ocasión, verás tu sitio:
 
-![Show AWS](/assets/images/aws/website-s3-show.png)
+![Show AWS]({{ 'assets/images/aws/website-s3-show.png' | relative_url }})
 
 ## __Conclusión__
 
