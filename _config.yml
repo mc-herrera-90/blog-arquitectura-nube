@@ -1,8 +1,8 @@
-title: Cayman Blog Theme
-description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and Gitlab/GitHub Pages.
+title: Arquitectura Cloud
+description: Sitio web, orientado a la arquitectura de Software y Cloud.
 show_downloads: true
 
-baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://lorepirri.github.io" # change this to the base hostname & protocol for your site
 
 
@@ -27,4 +27,4 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['now', 'about', 'contact']
+header_page_refs: ['Kit Tools', 'Acerca de Nosotros', 'Contacto']

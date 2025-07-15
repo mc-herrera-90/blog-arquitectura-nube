@@ -3,6 +3,7 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "blog";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css');
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -223,8 +224,10 @@ a {
     vertical-align: middle;
   }
 
-  img {
+  p img {
     max-width: 100%;
+    border: 2px double #191919;
+    border-style: dashed;
   }
 
   h1,
@@ -317,21 +320,76 @@ a {
     margin-top: 0;
   }
 
-  blockquote {
-    padding: 0 1rem;
-    margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+  // blockquote {
+  //   padding: 0 1rem;
+  //   margin-left: 0;
+  //   color: $blockquote-text-color;
+  //   border-left: 0.3rem solid $border-color;
 
-    > :first-child {
-      margin-top: 0;
-    }
+  //   > :first-child {
+  //     margin-top: 0;
+  //   }
 
-    > :last-child {
-      margin-bottom: 0;
-    }
+  //   > :last-child {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+blockquote p {
+  margin: auto;
+}
+blockquote {
+  border-left: 3px solid $section-headings-color;
+  color: $blockquote-text-color;
+  margin: 1.1em 0;
+  padding: 1.4em 2em;
+  position: relative;
+  transition: .2s border ease-in-out;
+  z-index: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    height: 2em;
+    background-color: #fafbfc;
+    width: 5px;
+    margin-top: -1em;
   }
-
+  &:after {
+    content: "\f35f";
+    position: absolute;
+    top: 50%;
+    left: -0.5em;
+    font-family: "Ionicons";
+    font-style: normal;
+    line-height: 1em;
+    text-align: center;
+    text-indent: -2px;
+    color: $section-headings-color;
+    width: 1em;
+    margin-top: -0.5em;
+    transition: .2s all ease-in-out, .4s transform ease-in-out;
+  }
+  &.format:before, &.format:after {
+    display: none;
+  }
+  &.book:after {
+    content: "\f12e";
+  }
+  &.podcast:after {
+    content: "\f32d";
+  }
+  &.lyrics:after{
+    content: "\f333";
+  }
+  &.favorite:after {
+    content: "\f384";
+  }
+  &:active:after{
+    transform: rotateY(360deg);
+  }
+}
   table {
     display: block;
     width: 100%;

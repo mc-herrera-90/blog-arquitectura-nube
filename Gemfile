@@ -5,3 +5,6 @@ source 'https://rubygems.org'
 
 
 gemspec
+
+gem "kramdown", "~> 2.5"
+gem "kramdown-parser-gfm", "~> 1.1"
