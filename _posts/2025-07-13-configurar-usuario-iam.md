@@ -3,6 +3,7 @@ layout: post
 title: "Configurar usuario IAM"
 tagline: "Guía paso a paso"
 author: "Marco Contreras"
+draft: true
 ---
 
 Los administradores de AWS pueden confiar en políticas, en lugar de configuraciones individuales, para configurar la seguridad de las cuentas en la plataforma. También tienen la ventaja de crear y configurar usuarios mediante programación.
