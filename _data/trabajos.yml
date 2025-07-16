@@ -1,0 +1,7 @@
+- modulo: 1
+  titulo: "Orientación al perfil"
+  descripcion: "Reconocer las características fundamentales del perfil laboral"
+  url: 'm1'
+  trabajos:
+    - title: "Introducción"
+      url: "#introducción"

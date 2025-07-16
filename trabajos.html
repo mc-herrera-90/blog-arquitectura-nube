@@ -1,0 +1,19 @@
+---
+layout: page
+title: Trabajos
+ref: trabajos
+order: 1
+---
+
+
+{% for modulo in site.data.trabajos %}
+
+<a href='{{ modulo.url | relative_url }}'>
+<h2>Módulo {{ modulo.modulo }}: {{ modulo.titulo }}</h2>
+</a>
+
+<p>{{ modulo.descripcion }}</p>
+
+{% endfor %}
+
+<a href="{{ '/' | absolute_url }}">Volver a Inicio</a>

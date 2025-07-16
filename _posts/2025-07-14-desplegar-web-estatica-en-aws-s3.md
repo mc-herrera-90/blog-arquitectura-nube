@@ -1,22 +1,21 @@
 ---
 layout: post
 title: "Desplegar una Web Estática en AWS S3"
-tagline: "Guía Paso a Paso"
+tagline: "Guía paso a paso"
 categories: serverless
-image: /thumbnail-mobile.png
+background: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxpcqcf9t8ieu9t6h8rmd.png"
 author: "Marco Contreras"
 ---
 
-Si tienes una página web estática (generada con HTML, CSS y JS o frameworks como Jekyll, Hugo o Astro), puedes publicarla en internet __gratis__ usando los __servicios serverless de Amazon Web Services__ (AWS). Aquí te ayudo a cómo hacerlo paso pasao, ya sea que tengas una cuenta __Free Tier__ o una cuenta de estudiante mediante __AWS Academy__.
+Si tienes una página web estática (generada con HTML, CSS y JS o frameworks como Jekyll, Hugo o Astro), puedes publicarla en Internet __gratis__ usando los __servicios serverless de Amazon Web Services__ (AWS). Aquí te ayudo a cómo hacerlo paso a paso, ya sea que tengas una cuenta __Free Tier__ o una cuenta de estudiante mediante __AWS Academy__.
 
-Para ello, usaremos los siguiete:
+Para ello, usaremos:
 
 - __Amazon S3__: Servicio de almacenamiento de archivos.
-- __AWS IAM__: Para permisos de acceso.
 
 ## __Entendiendo AWS Serverless__
 
-__AWS Serverless__ en un modelo de desarrollo nativo de la nube que permite a los desarrolladores crear y ejecutar aplicaciones sin preocuparse por los servidores. Mientras los servidores sigan existiendo, AWS se encarga de su configuración, mantenimiento y escalado. Usted solo tiene que centrarse en el desarrollo de su sitio web.
+__AWS Serverless__ en un modelo de desarrollo nativo de la nube que permite a los desarrolladores crear y ejecutar aplicaciones sin preocuparse por los servidores. Mientras los servidores sigan existiendo, AWS se encarga de su configuración, mantenimiento y escalado. Solo tienes que centrarte en el desarrollo de tu sitio web.
 
 > __Serverless__ no significa que no haya servidores, sino que __no tienes que administrarlos__. AWS se encarga de todo y solo tienes que subir tus archivos y dejar que el servicio los sirva al mundo sin preocuparse por infraestructura.
 
@@ -24,7 +23,7 @@ __AWS Serverless__ en un modelo de desarrollo nativo de la nube que permite a lo
 
 Un bucket de Amazon S3 es un recurso de almacenamiento en la nube disponible en __Simple Storage Service__ (S3) de AWS. Este servicio de almacenamiento de objetos ofrece escalabilidad, disponibilidad de datos, seguridad y rendimiento. Ofrece alojamiento estático de sitios web donde puede alojar su aplicación sin servidor.
 
-La estructura de tu sitio debe especificar un `index.html`:
+La estructura de tu sitio debe incluir un archivo `index.html`:
 
 ```bash
 mi-sitio/
@@ -61,7 +60,7 @@ __En el panel de inicio__
 
 ![Crear nuevo bucket]({{ 'assets/images/aws/new-bucket-button.png' | relative_url }})
 
-- Puedes crear el __bucket__ con la configuración predeterminada, pero tenga consideración al elegir el nombre del bucket porque no se podrá cambiar a futuro.
+- Puedes crear el __bucket__ con la configuración predeterminada, pero ten en cuenta que el nombre no podrá cambiarse en el futuro.
 
 ![Nombrar bucket]({{ 'assets/images/aws/name-bucket-s3.png' | relative_url }})
 
@@ -71,7 +70,7 @@ __En el panel de inicio__
 
 ![Botón cargar]({{ 'assets/images/aws/btn-change-upload-files.png' | relative_url }})
 
-- Ahora puedes subir los archivos de diferentes maneras, arrastando la carpeta o presionando en los botones:
+- Ahora puedes subir los archivos de diferentes maneras, arrastrando la carpeta o presionando en los botones:
 
 {: align="center" }
 ![Subir archivos del sitio]({{ 'assets/images/aws/upload-files-website.png' | relative_url }})
@@ -115,6 +114,8 @@ _Vista de la pestaña "Permisos" de un bucket en Amazon S3_
 ![Desmarcar el bloqueo a público]({{ 'assets/images/aws/uncheck-block-bucket.png' | relative_url }})
 _Al desmarcar esta casilla se permite configurar el acceso público al bucket_
 
+> Solo debes hacer esto si estás seguro de que el bucket debe estar disponible públicamente, como en el caso de un sitio web estático.
+
 ### b. Actualizar política del Bucket
 
 En la misma pestaña de permisos, verás la opción para editar la política del bucket:
@@ -147,6 +148,7 @@ Finalmente, después de completar todos los pasos, vuelve a la carpeta del sitio
 Encontrarás el enlace que revisamos anteriormente en __Objeto URL__ y, en esta ocasión, verás tu sitio:
 
 ![Show AWS]({{ 'assets/images/aws/website-s3-show.png' | relative_url }})
+
 
 ## __Conclusión__
 
