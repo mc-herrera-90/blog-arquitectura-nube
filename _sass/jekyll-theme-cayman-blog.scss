@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "blog";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css');
+@import "printer";
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -317,7 +318,9 @@ a {
 
   ul,
   ol {
-    margin-top: 0;
+    li, ol, ul {
+      margin: 7px 0;
+    }
   }
 
   // blockquote {

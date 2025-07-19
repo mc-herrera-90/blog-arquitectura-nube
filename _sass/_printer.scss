@@ -1,0 +1,18 @@
+@media print {
+    .site-header,
+    .site-footer {
+        display: none;
+    }
+
+    .page-header {
+        margin: 2cm 1.6cm;
+        color: #000;
+    }
+
+    .main-content {
+        margin: 2cm 1.6cm;
+        font-size: 12pt;
+        color: #000;
+        background: none;
+    }
+}

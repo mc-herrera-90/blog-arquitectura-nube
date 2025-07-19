@@ -5,6 +5,7 @@ show_downloads: false
 baseurl: "/blog-arquitectura-nube" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://mc-herrera-90.github.io" # change this to the base hostname & protocol for your site
 
+lang: es
 
 google_analytics:
 
@@ -26,5 +27,6 @@ plugins:
 
 target-blank:
     rel: nofollow
+
 
 header_page_refs: ['Kit Tools', 'Acerca de Nosotros', 'trabajos']
