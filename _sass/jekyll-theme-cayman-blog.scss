@@ -21,6 +21,12 @@
 @mixin small {
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
+    ul, ol {
+      margin-left: 1em;
+      ol, ul {
+        margin-left: 0.8em !important;
+      }
+    }
   }
 }
 
