@@ -28,5 +28,13 @@ plugins:
 target-blank:
     rel: nofollow
 
+collections_dir: collections
+
+collections:
+  m1:
+    output: true
+  m2:
+    output: true
+    permalink: /:collection/:slug/
 
 header_page_refs: ['Kit Tools', 'Acerca de Nosotros', 'trabajos']

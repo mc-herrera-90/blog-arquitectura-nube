@@ -2,3 +2,20 @@
 ---
 
 @import 'jekyll-theme-cayman-blog';
+
+em {
+    padding: 0 .18em 0 .1em;
+    color: lighten($body-text-color, 15%); // texto más claro al pasar el mouse
+}
+svg {
+    max-width: 100%;
+    height: fit-content;
+}
+
+@media (min-width: 992px) {
+    svg {
+        max-width: 38%;
+        height: 330px;
+        float: right;
+    }
+}

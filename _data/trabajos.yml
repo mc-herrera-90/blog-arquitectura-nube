@@ -5,3 +5,11 @@
   trabajos:
     - title: "Introducción"
       url: "#introducción"
+
+- modulo: 2
+  titulo: "El rol del arquitecto en el ciclo de vida del software"
+  descripcion: "Diferenciar los modelos de distribución de software asociada a la tecnología cloud"
+  url: 'm2'
+  trabajos:
+    - title: "Introducción"
+      url: "#introducción"
