@@ -6,6 +6,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css');
 @import "printer";
 
+.border-no {
+  border: 0 !important;
+}
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
