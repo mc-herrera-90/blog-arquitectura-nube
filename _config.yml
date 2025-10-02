@@ -28,6 +28,8 @@ plugins:
 target-blank:
     rel: nofollow
 
+excerpt_separator: <!--more-->
+
 collections_dir: collections
 
 collections:

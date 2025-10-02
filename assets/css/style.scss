@@ -12,10 +12,23 @@ svg {
     height: fit-content;
 }
 
+.no-float {
+    width: 100%;
+}
+.no-float svg {
+  float: none;
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+}
+
 @media (min-width: 992px) {
     svg {
         max-width: 38%;
         height: 330px;
         float: right;
+    }
+    .no-float svg {
+        max-width: 100%;
     }
 }

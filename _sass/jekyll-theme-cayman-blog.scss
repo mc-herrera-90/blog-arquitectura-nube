@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "blog";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css');
+@import "media-queries";
 @import "printer";
 
 .border-no {
@@ -200,9 +201,11 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 3rem 6rem;
+    padding: 3rem 2rem;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+
+  
   }
 
   @include medium {
