@@ -13,7 +13,6 @@ Este artículo presenta una visión integral de los elementos fundamentales de l
 
 ### Definición de Arquitectura
 
-
 La arquitectura de software se define como la estructura organizada fundamental de un sistema, incluyendo los elementos que lo componen y las relaciones entre ellos, así como los principios y guías de diseño que rigen su construcción y evolución. La arquitectura establece los componentes estructurales y cómo estos interactúan para cumplir con las necesidades de negocio y técnicas del sistema. Este conjunto de decisiones y estructuras afecta significativamente el rendimiento, escalabilidad y mantenimiento de la aplicación.
 
 Una arquitectura bien diseñada permite gestionar la complejidad de los sistemas modernos, asegurando que el software pueda adaptarse a cambios y demandas futuras sin comprometer su integridad ni desempeño. Para ello, se toman en cuenta tanto aspectos técnicos, como el uso de patrones de diseño y la elección de tecnologías, como aspectos de negocio, como la alineación con los objetivos estratégicos y operativos de la organización.

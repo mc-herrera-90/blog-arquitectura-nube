@@ -101,7 +101,6 @@ El Manifiesto Ágil representó un cambio de paradigma en el desarrollo de softw
 
 El Manifiesto Ágil también impulsó el desarrollo de nuevas metodologías, como Scrum, Kanban y XP (Extreme Programming), cada una con sus propias prácticas y enfoques. Aunque estas metodologías difieren en algunos aspectos, comparten valores y principios del Manifiesto Ágil, y todas buscan mejorar la eficiencia y la calidad del desarrolo de software. Estas metodologías han transformado la forma en que se gestiona y entrega el software, contribuyendo a una mayor satisfacción del cliente y a un proceso de desarrollo más sostenible.
 
-
 ## Metodología Scrum
 
 ### Fundamentos y Principios

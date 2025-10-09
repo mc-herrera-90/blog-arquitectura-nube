@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Fundamentos de la Arquitectura Cloud"
+---
+
+{% for act in site.m3 %}
+   <a href='{{ act.url | relative_url }}'>
+      <h2>{{ act.title | strip_html | escape }}</h2>
+   </a>
+
+   {{ act.excerpt | markdownify | strip_html | truncatewords: 30 | replace_first: 'Introducción', '' }}
+   <br/><br/>
+{% endfor %}

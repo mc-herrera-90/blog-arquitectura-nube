@@ -13,3 +13,8 @@
   trabajos:
     - title: "Introducción"
       url: "#introducción"
+
+- modulo: 3
+  titulo: "Introducción a la computación en la nube"
+  descripcion: "Fundamentos de la arquitectura cloud"
+  url: 'm3'

@@ -38,5 +38,7 @@ collections:
   m2:
     output: true
     permalink: /:collection/:slug/
-
+  m3:
+    output: true
+    permalink: /:collection/:slug/
 header_page_refs: ['Kit Tools', 'Acerca de Nosotros', 'trabajos']
