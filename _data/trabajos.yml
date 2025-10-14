@@ -18,3 +18,8 @@
   titulo: "Introducción a la computación en la nube"
   descripcion: "Fundamentos de la arquitectura cloud"
   url: 'm3'
+
+- modulo: 4
+  titulo: "Fundamentos de tecnología Cloud"
+  descripcion: "Evaluar los servicios asociados al almacenamiento de objetos, datos en pequeños y grandes volúmenes"
+  url: 'm4'

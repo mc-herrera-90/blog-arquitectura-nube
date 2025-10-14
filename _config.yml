@@ -17,10 +17,10 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: lorepirri
+author: mcherreras
 image: /thumbnail-jumbo.png
 twitter:
-  username: lorepirri
+  username: mcherrera
 
 plugins:
   - jekyll-target-blank
@@ -41,4 +41,16 @@ collections:
   m3:
     output: true
     permalink: /:collection/:slug/
+  m4:
+    output: true
+    permalink: /:collection/:slug/
+
+
 header_page_refs: ['Kit Tools', 'Acerca de Nosotros', 'trabajos']
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /post/:title/
